@@ -1,0 +1,26 @@
+alias tmuxa="tmux attach-session -t"
+alias tmuxl="tmux list-sessions"
+
+# dir listing/traversal
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+alias l="ls -la $colorflag"
+
+alias ..="cd .."
+alias ...="cd ..."
+alias ....="cd ../../.."
+alias ~="cd ~"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '

@@ -1,0 +1,8 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[alias]
+    hist = log --pretty=format:\"%h %ad | [%an]\t%s%d\" --graph --date=short
+
+[user]
+	name = Shahin Saneinejad
+	email = shahin.saneinejad@gmail.com
