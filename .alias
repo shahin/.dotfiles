@@ -1,8 +1,6 @@
 alias tmuxa="tmux attach-session -t"
 alias tmuxl="tmux list-sessions"
 
-# dir listing/traversal
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"

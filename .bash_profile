@@ -4,8 +4,9 @@ else
   OS=$(uname -s)
 fi
 
-DOTFILES_DIR="$HOME/.dotfiles"
-
 source /usr/local/bin/virtualenvwrapper.sh
-# Trigger ~/.bashrc commands
-. ~/.bashrc
+
+for file in ~/.{bashrc,inputrc,alias,bash_prompt,env}; do
+    [ -r "$file" ] && source "$file";
+done;
+unset file;
