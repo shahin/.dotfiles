@@ -4,3 +4,5 @@ for filename in .{bash_profile,bashrc,inputrc,alias,bash_prompt,env}; do
     fi
     ln -s "$(pwd)/$filename" "$HOME/${filename}"
 done;
+
+ln -s "$(pwd)/.env" "$HOME/.zshenv"
