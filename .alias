@@ -1,9 +1,3 @@
-_ssh_auth_save() {
-    rm $HOME/.ssh/ssh-auth-sock
-    ln -sf "$SSH_AUTH_SOCK" "$HOME/.ssh/ssh-auth-sock"
-}
-alias tmux='_ssh_auth_save ; export HOSTNAME=$(hostname) ; tmux'
-
 alias tmuxa="tmux attach-session -t"
 alias tmuxl="tmux list-sessions"
 
